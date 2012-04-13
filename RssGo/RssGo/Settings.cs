@@ -7,19 +7,19 @@ namespace RssGo
 {
     public class Settings
     {
-        public SolidColorBrush Brush
-        {
-            get { return new SolidColorBrush(Colors.Blue); }
-        }
-        public SolidColorBrush Foreground
+        public SolidColorBrush AccentBrush
         {
             get { return new SolidColorBrush(Colors.Red); }
         }
+        public SolidColorBrush Foreground
+        {
+            get { return new SolidColorBrush(Colors.LightBlue); }
+        }
         public SolidColorBrush Background
         {
-            get { return new SolidColorBrush(Colors.Green); }
+            get { return new SolidColorBrush(Colors.DarkBlue); }
         }
-        public String ApplicationName
+        public String FeedName
         {
             get { return "Hello world!"; }
         }

@@ -63,7 +63,7 @@
 			</Grid.RowDefinitions>
 	
 			<!-- Title -->
-			<TextBlock x:Name="TitleText" Text="{Binding Title}"
+            <TextBlock x:Name="TitleText" Text="{Binding Source={StaticResource SettingsWithBrush}, Path=FeedName}"
 				VerticalAlignment="Center" FontSize="48" Margin="56,0,0,0"/>
 
 			<!-- Content -->
@@ -81,9 +81,7 @@
 				<ListView x:Name="ItemListView"  
 					ItemsSource="{Binding Feeds}"
 					Margin="60,0,0,10"
-					>
-
-                    <!-- SelectionChanged="ItemListView_SelectionChanged"-->
+					SelectionChanged="ItemListView_SelectionChanged" ItemContainerStyle="{StaticResource ListViewItemStyle1}">
                     
 					<ListView.ItemTemplate>
 						<DataTemplate>
@@ -118,15 +116,13 @@
 <!-- The default value of Grid.Column is 0, so we do not need to set it   
                  to make the ListView show up in the first column. -->
 			<ListView x:Name="ItemListView1"  
-				ItemsSource="{Binding Items}"
-				>
-
-                <!--  SelectionChanged="ItemListView_SelectionChanged" -->
+				ItemsSource="{Binding Feeds}"
+                  SelectionChanged="ItemListView_SelectionChanged" ItemContainerStyle="{StaticResource ListViewItemStyle1}" >
                 
 				<ListView.ItemTemplate>
 					<DataTemplate>
 						<StackPanel>
-							<TextBlock Text="{Binding Title}"  
+                            <TextBlock Text="{Binding Title}"  
 								FontSize="24" Margin="5,0,0,0" TextWrapping="Wrap" />
 						<!--	<TextBlock Text="{Binding Author}" 
 								FontSize="16" Margin="15,0,0,0"/>
@@ -145,8 +141,8 @@
 			</Grid.RowDefinitions>
 	
 			<!-- Title -->
-			<TextBlock x:Name="textBlock" Text="{Binding Title}"
-				VerticalAlignment="Center" FontSize="48" Margin="56,0,0,0"/>
+            <TextBlock x:Name="textBlock" Text="{Binding Source={StaticResource SettingsWithBrush}, Path=FeedName}"
+				VerticalAlignment="Center" FontSize="48" Margin="25,0,0,0"/>
 
 			<!-- Content -->
 			<Grid Grid.Row="1">
@@ -161,11 +157,10 @@
 				<!-- The default value of Grid.Column is 0, so we do not need to set it   
                  to make the ListView show up in the first column. -->
 				<ListView  
-					ItemsSource="{Binding Items}"
+					ItemsSource="{Binding Feeds}"
 					Margin="25,0,0,10"					
-                    HorizontalContentAlignment="Stretch">
-
-                    <!-- SelectionChanged="ItemListView_SelectionChanged" -->
+                    HorizontalContentAlignment="Stretch"
+                    SelectionChanged="ItemListView_SelectionChanged" ItemContainerStyle="{StaticResource ListViewItemStyle1}">
                     
 					<ListView.ItemTemplate>
 						<DataTemplate>

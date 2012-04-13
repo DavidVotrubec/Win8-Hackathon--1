@@ -15,7 +15,6 @@ c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\obj
 d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\bin\Debug\RssGoLibrary.dll
 d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\bin\Debug\RssGoLibrary.pdb
 d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\bin\Debug\RssGoLibrary.pri
-d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\obj\Debug\RssGoLibrary.csprojResolveAssemblyReference.cache
 d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\obj\Debug\RssGoLibrary.dll
 d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\obj\Debug\RssGoLibrary.pdb
 d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\obj\Debug\priconfig.xml
@@ -23,3 +22,4 @@ d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\obj\Debug\layout.resfiles
 d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\obj\Debug\resources.resfiles
 d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\obj\Debug\pri.resfiles
 d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\obj\Debug\LanguageQualifiers.txt
+D:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\obj\Debug\RssGoLibrary.csprojResolveAssemblyReference.cache
