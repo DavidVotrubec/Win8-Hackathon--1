@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 11 Express for Windows 8
+# Visual Studio 11
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssGo", "RssGo\RssGo.csproj", "{E49CD8D4-E5F3-4516-A21B-3E98E9291418}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssGoLibrary", "RssGoLibrary\RssGoLibrary\RssGoLibrary.csproj", "{B675842A-6197-4040-9185-F9C3B3E019DF}"
