@@ -104,7 +104,7 @@
 						<RowDefinition Height="*" />
 					</Grid.RowDefinitions>
 					<TextBlock x:Name="PostTitleText" Text="{Binding Title}" FontSize="24"/>
-					<WebView x:Name="ContentView" Grid.Row="1" Margin="0,5,20,20"/>
+					<WebView x:Name="ContentView" Grid.Row="1" Margin="0,5,20,20" Visibility="Collapsed"/>
 				</Grid>
 			</Grid>
 		</Grid>
@@ -132,7 +132,7 @@
 					</DataTemplate>
 				</ListView.ItemTemplate>
 			</ListView>
-			<WebView x:Name="ContentView1" Grid.Row="1"/>
+			<WebView x:Name="ContentView1" Grid.Row="1" Visibility="Collapsed"/>
 		</Grid>
 		<Grid x:Name="PortaitGrid" Visibility="Collapsed">
 					<Grid.RowDefinitions>
@@ -189,7 +189,7 @@
 						<RowDefinition Height="*" />
 					</Grid.RowDefinitions>
 					<TextBlock Text="{Binding Title}" FontSize="24"/>
-					<WebView x:Name="ContentView2" Grid.Row="1" Margin="0,5,20,20"/>
+					<WebView x:Name="ContentView2" Grid.Row="1" Margin="0,5,20,20" Visibility="Collapsed"/>
 				</Grid> 
 			</Grid>
 

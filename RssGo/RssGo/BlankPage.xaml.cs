@@ -39,6 +39,10 @@ namespace RssGo
                 ContentView.Navigate(new Uri(feedItem.Link, UriKind.Absolute));
                 ContentView1.Navigate(new Uri(feedItem.Link, UriKind.Absolute));
                 ContentView2.Navigate(new Uri(feedItem.Link, UriKind.Absolute));
+
+                ContentView.Visibility = Visibility.Visible;
+                ContentView1.Visibility = Visibility.Visible;
+                ContentView2.Visibility = Visibility.Visible;
             }
         }
 
