@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>LENOVOHACKATHON</Machine>
+    <WindowsUser>David</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>4847ADDF35BA6A47FCA885527BCB48949595C31E36BDB3C2CB5F3636682B53B2</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>4221450e-d0c4-479d-9af2-cabcb53135af_1.0.0.0_neutral__ywwvhtjmx9rt8</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>4221450e-d0c4-479d-9af2-cabcb53135af_ywwvhtjmx9rt8!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>4221450e-d0c4-479d-9af2-cabcb53135af</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=David</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\TestApp\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <Modified>2012-04-13T13:26:31.116</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\TestApp\bin\Debug\TestApp.exe">
+      <PackagePath>TestApp.exe</PackagePath>
+      <Modified>2012-04-13T14:08:00.819</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\TestApp\bin\Debug\TestApp.pdb">
+      <PackagePath>TestApp.pdb</PackagePath>
+      <Modified>2012-04-13T14:08:00.796</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\bin\Debug\RssGoLibrary.dll">
+      <PackagePath>RssGoLibrary.dll</PackagePath>
+      <Modified>2012-04-13T14:07:59.328</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\bin\Debug\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2012-04-13T13:11:01.644</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\bin\Debug\RssGoLibrary.pdb">
+      <PackagePath>RssGoLibrary.pdb</PackagePath>
+      <Modified>2012-04-13T14:07:59.313</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\bin\Debug\Newtonsoft.Json.pdb">
+      <PackagePath>Newtonsoft.Json.pdb</PackagePath>
+      <Modified>2012-04-13T13:11:01.675</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\bin\Debug\Newtonsoft.Json.xml">
+      <PackagePath>Newtonsoft.Json.xml</PackagePath>
+      <Modified>2012-04-13T13:11:01.707</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\TestApp\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <Modified>2012-02-14T03:21:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\TestApp\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <Modified>2012-02-14T03:21:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\TestApp\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <Modified>2012-02-14T03:21:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\TestApp\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <Modified>2012-02-14T03:21:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\TestApp\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-02-14T03:21:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\TestApp\bin\Debug\BlankPage.xaml">
+      <PackagePath>BlankPage.xaml</PackagePath>
+      <Modified>2012-04-13T13:19:29.759</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\TestApp\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2012-04-13T13:19:29.753</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\TestApp\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2012-04-13T13:26:31.045</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

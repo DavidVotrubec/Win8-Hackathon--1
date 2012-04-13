@@ -1,0 +1,14 @@
+c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\bin\Debug\RssGoLibrary.dll
+c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\bin\Debug\RssGoLibrary.pdb
+c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\bin\Debug\RssGoLibrary.pri
+c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\bin\Debug\Newtonsoft.Json.dll
+c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\bin\Debug\Newtonsoft.Json.pdb
+c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\bin\Debug\Newtonsoft.Json.xml
+c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\obj\Debug\RssGoLibrary.csprojResolveAssemblyReference.cache
+c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\obj\Debug\RssGoLibrary.dll
+c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\obj\Debug\RssGoLibrary.pdb
+c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\obj\Debug\priconfig.xml
+c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\obj\Debug\layout.resfiles
+c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\obj\Debug\resources.resfiles
+c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\obj\Debug\pri.resfiles
+c:\users\david\documents\visual studio 11\Projects\RssGoLibrary\RssGoLibrary\obj\Debug\LanguageQualifiers.txt
