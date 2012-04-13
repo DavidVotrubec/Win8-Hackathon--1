@@ -9,17 +9,29 @@
   <ItemGroup>
     <AppXManifest Include="D:\work\win8\RssGo\RssGo\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
-      <Modified>2012-04-13T11:49:22.025</Modified>
+      <Modified>2012-04-13T19:49:12.618</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\bin\Debug\RssGo.exe">
       <PackagePath>RssGo.exe</PackagePath>
-      <Modified>2012-04-13T15:39:29.703</Modified>
+      <Modified>2012-04-13T20:07:22.123</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\bin\Debug\RssGo.pdb">
       <PackagePath>RssGo.pdb</PackagePath>
-      <Modified>2012-04-13T15:39:29.681</Modified>
+      <Modified>2012-04-13T20:07:22.096</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\bin\Debug\RssGoLibrary.dll">
+      <PackagePath>RssGoLibrary.dll</PackagePath>
+      <Modified>2012-04-13T19:49:09.409</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\bin\Debug\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2012-04-13T14:25:53.608</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\bin\Debug\RssGoLibrary.pdb">
+      <PackagePath>RssGoLibrary.pdb</PackagePath>
+      <Modified>2012-04-13T19:49:09.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
@@ -39,11 +51,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\bin\Debug\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
-      <Modified>2012-02-14T03:21:16.000</Modified>
+      <Modified>2012-04-13T20:03:58.194</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\bin\Debug\BlankPage.xaml">
       <PackagePath>BlankPage.xaml</PackagePath>
-      <Modified>2012-04-13T15:39:26.712</Modified>
+      <Modified>2012-04-13T20:07:18.587</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\bin\Debug\ItemsPage1.xaml">
       <PackagePath>ItemsPage1.xaml</PackagePath>
@@ -51,11 +63,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\bin\Debug\App.xaml">
       <PackagePath>App.xaml</PackagePath>
-      <Modified>2012-04-13T11:05:54.799</Modified>
+      <Modified>2012-04-13T17:50:32.067</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2012-04-13T11:49:21.955</Modified>
+      <Modified>2012-04-13T19:49:12.442</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

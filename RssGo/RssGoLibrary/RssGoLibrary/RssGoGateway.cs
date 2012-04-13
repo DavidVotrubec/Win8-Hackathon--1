@@ -67,7 +67,7 @@ namespace RssGoLibrary
                     Author = (string)jsonUpdate["author"],
                     Content = (string)jsonUpdate["description"],
                     Link = (string)jsonUpdate["link"],
-                    PubDate = new DateTime(1970, 1, 1).AddSeconds((double)jsonUpdate["timestamp"])
+                    PubDate = new DateTime(1970, 1, 1).AddSeconds(Convert.ToDouble(jsonUpdate["timestamp"]))
                 };
                 updates.Add(update);
             }

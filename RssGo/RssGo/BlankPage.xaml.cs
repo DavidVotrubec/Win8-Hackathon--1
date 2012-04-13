@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -20,20 +21,13 @@ namespace RssGo
         public BlankPage()
         {
             InitializeComponent();
+            App.FeedDataSource.InitDispatcher(Dispatcher);
         }
 
-<<<<<<< HEAD
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
             DataContext = App.FeedDataSource;
-=======
-
-
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            DataContext = App.FeedDataSource;
             //Fill="{Binding Source={StaticResource SettingsWithBrush}, Path=Brush}"
->>>>>>> 695dc330abdf3a743d393c4d5cd2001ca97dfa13
         }
 
         private void ItemListView_SelectionChanged(object sender, SelectionChangedEventArgs e)

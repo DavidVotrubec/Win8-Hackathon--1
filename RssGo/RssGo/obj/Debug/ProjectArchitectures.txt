@@ -1,2 +1,2 @@
-d:\work\win8\RssGo\RssGo\RssGo.csproj;neutral
-d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\RssGoLibrary.csproj;neutral
+D:\work\win8\RssGo\RssGo\RssGo.csproj;neutral
+D:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\RssGoLibrary.csproj;neutral

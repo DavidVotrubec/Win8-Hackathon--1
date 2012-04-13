@@ -31,10 +31,8 @@ namespace RssGo
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
-
             // Instantiate the data source.
             feedDataSource = new FeedDataSource();
-            feedDataSource.GetFeedAsync();
         }
 
         /// <summary>
@@ -58,7 +56,7 @@ namespace RssGo
             Window.Current.Content = rootFrame;
             Window.Current.Activate();
 
-            feedDataSource.GetFeedAsync(1, "ahoj");
+            feedDataSource.GetFeedAsync(1, new Random().Next().ToString());
         }
 
         /// <summary>
