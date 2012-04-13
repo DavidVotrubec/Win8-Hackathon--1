@@ -21,11 +21,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="d:\work\win8\RssGo\RssGo\bin\Debug\RssGo.exe">
       <PackagePath>RssGo.exe</PackagePath>
-      <Modified>2012-04-13T14:18:17.459</Modified>
+      <Modified>2012-04-13T15:57:36.550</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="d:\work\win8\RssGo\RssGo\bin\Debug\RssGo.pdb">
       <PackagePath>RssGo.pdb</PackagePath>
-      <Modified>2012-04-13T14:18:17.438</Modified>
+      <Modified>2012-04-13T15:57:36.524</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="d:\work\win8\RssGo\RssGo\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
@@ -49,7 +49,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="d:\work\win8\RssGo\RssGo\bin\Debug\BlankPage.xaml">
       <PackagePath>BlankPage.xaml</PackagePath>
-      <Modified>2012-04-13T14:18:13.370</Modified>
+      <Modified>2012-04-13T15:57:25.675</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="d:\work\win8\RssGo\RssGo\bin\Debug\ItemsPage1.xaml">
       <PackagePath>ItemsPage1.xaml</PackagePath>

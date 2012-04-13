@@ -209,6 +209,10 @@ namespace RssGo.XamlTypeInfo
                 xamlType = new XamlSystemBaseType(typeName, typeof(System.Boolean));
                 break;
 
+            case "Windows.UI.Xaml.Controls.ListViewItem":
+                xamlType = new XamlSystemBaseType(typeName, typeof(Windows.UI.Xaml.Controls.ListViewItem));
+                break;
+
             case "RssGo.FeedDataSource":
                 userType = new XamlUserType(this, typeName, typeof(RssGo.FeedDataSource), GetXamlTypeByName("Object"));
                 userType.Activator = Activate_0_FeedDataSource;
