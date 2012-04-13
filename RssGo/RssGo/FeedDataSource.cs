@@ -22,7 +22,7 @@ namespace RssGo
             }
         }
 
-        public void GetFeedAsync(string feedUriString)
+        public void GetFeedAsync()
         {
             var gatewayInstance = RssGoGateway.Instance;
             gatewayInstance.GetFeedUpdates += feedLoaded;

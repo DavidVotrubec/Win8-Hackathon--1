@@ -1,2 +1,0 @@
-c:\Projects\Win8_Hackathon_1\RssGo\RssGo\RssGo.csproj;neutral
-c:\Projects\Win8_Hackathon_1\RssGo\RssGoLibrary\RssGoLibrary\RssGoLibrary.csproj;neutral

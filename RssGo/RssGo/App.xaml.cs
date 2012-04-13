@@ -35,6 +35,7 @@ namespace RssGo
 
             // Instantiate the data source.
             feedDataSource = new FeedDataSource();
+            feedDataSource.GetFeedAsync();
         }
 
         /// <summary>
