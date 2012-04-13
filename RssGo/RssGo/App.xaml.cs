@@ -23,8 +23,6 @@ namespace RssGo
     /// </summary>
     sealed partial class App : Application
     {
-        // Add a static instance of FeedDataSource.
-        public static FeedDataSource DataSource;
 
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
@@ -36,7 +34,7 @@ namespace RssGo
             this.Suspending += OnSuspending;
 
             // Instantiate the data source.
-            DataSource = new FeedDataSource();
+            feedDataSource = new FeedDataSource();
         }
 
         /// <summary>
@@ -71,6 +69,17 @@ namespace RssGo
         void OnSuspending(object sender, SuspendingEventArgs e)
         {
             //TODO: Save application state and stop any background activity
+        }
+
+
+        private static FeedDataSource feedDataSource;
+
+        public static FeedDataSource FeedDataSource
+        {
+            get
+            {
+                return feedDataSource;
+            }
         }
     }
 }
