@@ -31,9 +31,7 @@ namespace RssGo
         }
 
         private void ItemListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            
-            
+        {        
             RssFeedItem feedItem = e.AddedItems[0] as RssFeedItem;
             if (feedItem != null)
             {

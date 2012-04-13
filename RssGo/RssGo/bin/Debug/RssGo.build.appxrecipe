@@ -5,12 +5,6 @@
     <WindowsUser>Jiri</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>69768C7ACD4B667908E1CD479907BE1BA450E1FBD3A6E0963EA74D30BF4602AB</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>542a7a68-d5a0-4374-94aa-f1b81a922442_1.0.0.0_neutral__zxsjddt7sbfjw</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>542a7a68-d5a0-4374-94aa-f1b81a922442_zxsjddt7sbfjw!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>542a7a68-d5a0-4374-94aa-f1b81a922442</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=Jiri</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="d:\work\win8\RssGo\RssGo\bin\Debug\AppxManifest.xml">
