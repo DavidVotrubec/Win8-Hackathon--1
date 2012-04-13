@@ -13,8 +13,16 @@
                     Required by Visual Studio project and item templates
                  -->
                 <ResourceDictionary Source="Common/StandardStyles.xaml"/>
-            </ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary>
+                        <local:FeedDataSource x:Key="feedDataSource"/>
 
+                        <!-- Add the DateConverter here. -->
+                        <local:DateConverter x:Key="dateConverter" />
+
+                    </ResourceDictionary>
+                </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
+    
+

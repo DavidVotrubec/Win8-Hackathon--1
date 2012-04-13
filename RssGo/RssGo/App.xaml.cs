@@ -23,6 +23,9 @@ namespace RssGo
     /// </summary>
     sealed partial class App : Application
     {
+        // Add a static instance of FeedDataSource.
+        public static FeedDataSource DataSource;
+
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -31,6 +34,9 @@ namespace RssGo
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            // Instantiate the data source.
+            DataSource = new FeedDataSource();
         }
 
         /// <summary>

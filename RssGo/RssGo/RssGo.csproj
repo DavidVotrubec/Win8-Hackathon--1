@@ -121,6 +121,8 @@
     <Compile Include="BlankPage.xaml.cs">
       <DependentUpon>BlankPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DateConverter.cs" />
+    <Compile Include="FeedData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

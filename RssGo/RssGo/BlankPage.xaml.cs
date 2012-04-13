@@ -31,8 +31,26 @@ namespace RssGo
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.  The Parameter
         /// property is typically used to configure the page.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
+            FeedDataSource _feedDataSource = App.DataSource;
+
+            if (_feedDataSource.Feeds.Count == 0)
+            {
+                await _feedDataSource.GetFeedsAsync();
+            }
+
+            this.DataContext = (_feedDataSource.Feeds).First();
+        }
+
+        private void ItemListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            FeedItem feedItem = e.AddedItems[0] as FeedItem;
+            if (feedItem != null)
+            {
+                // Navigate the WebView to the blog post content HTML string.
+                ContentView.NavigateToString(feedItem.Content);
+            }
         }
     }
 }

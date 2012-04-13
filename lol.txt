@@ -1,5 +1,0 @@
-this is just a test file to test git connection
-
-and it works fine
-
-hello
