@@ -16,8 +16,8 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="RssGo.exe" EntryPoint="RssGo.App">
-      <VisualElements DisplayName="RssGo" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="RssGo" ForegroundText="light" BackgroundColor="#222222">
-        <DefaultTile ShowName="allLogos" />
+      <VisualElements DisplayName="RssGo" Logo="logo-blesk.png" SmallLogo="small-logo-blesk.png" Description="RssGo" ForegroundText="light" BackgroundColor="#222222">
+        <DefaultTile ShowName="allLogos" WideLogo="wide-logo-blesk.png" />
         <SplashScreen Image="Assets\SplashScreen.png" />
       </VisualElements>
     </Application>
