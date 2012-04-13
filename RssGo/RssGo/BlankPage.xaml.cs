@@ -21,8 +21,6 @@ namespace RssGo
             InitializeComponent();
         }
 
-
-
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
             DataContext = App.FeedDataSource;
