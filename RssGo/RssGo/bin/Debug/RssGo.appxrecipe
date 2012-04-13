@@ -7,53 +7,53 @@
     <PackageArchitecture>neutral</PackageArchitecture>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="d:\work\win8\RssGo\RssGo\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="D:\work\win8\RssGo\RssGo\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <Modified>2012-04-13T11:49:22.025</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="d:\work\win8\RssGo\RssGo\bin\Debug\RssGo.exe">
+    <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\bin\Debug\RssGo.exe">
       <PackagePath>RssGo.exe</PackagePath>
-      <Modified>2012-04-13T12:34:20.544</Modified>
+      <Modified>2012-04-13T12:28:42.263</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\work\win8\RssGo\RssGo\bin\Debug\RssGo.pdb">
+    <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\bin\Debug\RssGo.pdb">
       <PackagePath>RssGo.pdb</PackagePath>
-      <Modified>2012-04-13T12:34:20.520</Modified>
+      <Modified>2012-04-13T12:28:42.240</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\work\win8\RssGo\RssGo\Assets\Logo.png">
+    <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <Modified>2012-02-14T03:21:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\work\win8\RssGo\RssGo\Assets\SmallLogo.png">
+    <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\Assets\SmallLogo.png">
       <PackagePath>Assets\SmallLogo.png</PackagePath>
       <Modified>2012-02-14T03:21:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\work\win8\RssGo\RssGo\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <Modified>2012-02-14T03:21:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\work\win8\RssGo\RssGo\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <Modified>2012-02-14T03:21:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\work\win8\RssGo\RssGo\bin\Debug\Common\StandardStyles.xaml">
+    <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\bin\Debug\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
       <Modified>2012-02-14T03:21:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\work\win8\RssGo\RssGo\bin\Debug\BlankPage.xaml">
+    <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\bin\Debug\BlankPage.xaml">
       <PackagePath>BlankPage.xaml</PackagePath>
-      <Modified>2012-04-13T12:34:04.003</Modified>
+      <Modified>2012-04-13T12:25:31.844</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\work\win8\RssGo\RssGo\bin\Debug\ItemsPage1.xaml">
+    <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\bin\Debug\ItemsPage1.xaml">
       <PackagePath>ItemsPage1.xaml</PackagePath>
       <Modified>2012-04-13T11:46:39.570</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\work\win8\RssGo\RssGo\bin\Debug\App.xaml">
+    <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\bin\Debug\App.xaml">
       <PackagePath>App.xaml</PackagePath>
       <Modified>2012-04-13T11:05:54.799</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\work\win8\RssGo\RssGo\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\work\win8\RssGo\RssGo\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <Modified>2012-04-13T11:49:21.955</Modified>
     </AppxPackagedFile>
