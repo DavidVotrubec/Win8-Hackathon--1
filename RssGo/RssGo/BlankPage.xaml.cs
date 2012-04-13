@@ -51,6 +51,7 @@ namespace RssGo
                 // Navigate the WebView to the blog post content HTML string.
                 ContentView.NavigateToString(feedItem.Content);
                 ContentView1.NavigateToString(feedItem.Content);
+                ContentView2.NavigateToString(feedItem.Content);
             }
         }
     }

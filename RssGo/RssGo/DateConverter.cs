@@ -41,7 +41,8 @@ namespace RssGo
             else
             {
                 // Requested format is unknown. Return in the original format.
-                return dt.ToString();
+                var dt2 = new DateTime(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, 0);
+                return dt2.ToString();
             }
         }
 
