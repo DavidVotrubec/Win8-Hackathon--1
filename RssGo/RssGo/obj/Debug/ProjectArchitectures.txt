@@ -1,1 +1,1 @@
-d:\work\win8\RssGo\RssGo\RssGo.csproj;neutral
+D:\work\win8\RssGo\RssGo\RssGo.csproj;neutral

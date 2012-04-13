@@ -129,9 +129,11 @@ namespace RssGo.XamlTypeInfo
 
         private object Activate_10_LayoutAwarePage() { return new RssGo.Common.LayoutAwarePage(); }
 
-        private object Activate_11_BlankPage() { return new RssGo.BlankPage(); }
+        private object Activate_11_Settings() { return new RssGo.Settings(); }
 
-        private object Activate_12_ItemsPage1() { return new RssGo.ItemsPage1(); }
+        private object Activate_12_BlankPage() { return new RssGo.BlankPage(); }
+
+        private object Activate_13_ItemsPage1() { return new RssGo.ItemsPage1(); }
 
         private void VectorAdd_1_ObservableCollection(object instance, object item)
         {
@@ -207,6 +209,10 @@ namespace RssGo.XamlTypeInfo
             case "System.Boolean":
             case "Boolean":
                 xamlType = new XamlSystemBaseType(typeName, typeof(System.Boolean));
+                break;
+
+            case "Windows.UI.Xaml.Media.SolidColorBrush":
+                xamlType = new XamlSystemBaseType(typeName, typeof(Windows.UI.Xaml.Media.SolidColorBrush));
                 break;
 
             case "Windows.UI.Xaml.Controls.ListViewItem":
@@ -294,15 +300,22 @@ namespace RssGo.XamlTypeInfo
                 xamlType = userType;
                 break;
 
+            case "RssGo.Settings":
+                userType = new XamlUserType(this, typeName, typeof(RssGo.Settings), GetXamlTypeByName("Object"));
+                userType.Activator = Activate_11_Settings;
+                userType.AddMemberName("Brush", "RssGo.Settings.Brush");
+                xamlType = userType;
+                break;
+
             case "RssGo.BlankPage":
                 userType = new XamlUserType(this, typeName, typeof(RssGo.BlankPage), GetXamlTypeByName("RssGo.Common.LayoutAwarePage"));
-                userType.Activator = Activate_11_BlankPage;
+                userType.Activator = Activate_12_BlankPage;
                 xamlType = userType;
                 break;
 
             case "RssGo.ItemsPage1":
                 userType = new XamlUserType(this, typeName, typeof(RssGo.ItemsPage1), GetXamlTypeByName("RssGo.Common.LayoutAwarePage"));
-                userType.Activator = Activate_12_ItemsPage1;
+                userType.Activator = Activate_13_ItemsPage1;
                 xamlType = userType;
                 break;
 
@@ -411,6 +424,11 @@ namespace RssGo.XamlTypeInfo
             var that = (RssGo.Common.LayoutAwarePage)instance;
             that.UseFilledStateForNarrowWindow = (System.Boolean)Value;
         }
+        private object get_11_Settings_Brush(object instance)
+        {
+            var that = (RssGo.Settings)instance;
+            return that.Brush;
+        }
 
         private IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -484,6 +502,12 @@ namespace RssGo.XamlTypeInfo
                 xamlMember = new XamlMember(this, "UseFilledStateForNarrowWindow", "Boolean");
                 xamlMember.Getter = get_10_LayoutAwarePage_UseFilledStateForNarrowWindow;
                 xamlMember.Setter = set_10_LayoutAwarePage_UseFilledStateForNarrowWindow;
+                break;
+            case "RssGo.Settings.Brush":
+                userType = (XamlUserType)GetXamlTypeByName("RssGo.Settings");
+                xamlMember = new XamlMember(this, "Brush", "Windows.UI.Xaml.Media.SolidColorBrush");
+                xamlMember.Getter = get_11_Settings_Brush;
+                xamlMember.SetIsReadOnly();
                 break;
             }
             return xamlMember;
