@@ -23,7 +23,3 @@ d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\obj\Debug\layout.resfiles
 d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\obj\Debug\resources.resfiles
 d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\obj\Debug\pri.resfiles
 d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\obj\Debug\LanguageQualifiers.txt
-d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\obj\Debug\priconfig.xml.intermediate
-d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\obj\Debug\layout.resfiles.intermediate
-d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\obj\Debug\resources.resfiles.intermediate
-d:\work\win8\RssGo\RssGoLibrary\RssGoLibrary\obj\Debug\pri.resfiles.intermediate

@@ -9,8 +9,8 @@ namespace RssGoLibrary
 {
     public class RssGoGateway
     {
-        private const string SERVER_URL = "http://esf.cepelik.eu";
-        private const string GET_FEED_UPDATES_URL = SERVER_URL + "/get-feeds";
+        private const string SERVER_URL = "http://projekt.gymlit.cz";
+        private const string GET_FEED_UPDATES_URL = SERVER_URL + "/get-updates/{0}/{1}";
 
 
         
@@ -36,12 +36,13 @@ namespace RssGoLibrary
                 return instance;
             }
         }
-        
-        
-        
-        public void BeginGetFeedUpdates()
+
+
+
+        public void BeginGetFeedUpdates(int companyId, string anid)
         {
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(GET_FEED_UPDATES_URL);
+            string url = string.Format(GET_FEED_UPDATES_URL, companyId, anid);
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.BeginGetResponse(GetFeedUpdatesCallback, request);
         }
 
@@ -65,7 +66,7 @@ namespace RssGoLibrary
                     Title = (string)jsonUpdate["title"],
                     Author = (string)jsonUpdate["author"],
                     Content = (string)jsonUpdate["description"],
-                    Link = new Uri((string)jsonUpdate["link"]),
+                    Link = (string)jsonUpdate["link"],
                     PubDate = new DateTime(1970, 1, 1).AddSeconds((double)jsonUpdate["timestamp"])
                 };
                 updates.Add(update);

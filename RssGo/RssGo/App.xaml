@@ -18,8 +18,8 @@
 
                         <!-- Add the DateConverter here. -->
                         <local:DateConverter x:Key="dateConverter" />
-
-                    </ResourceDictionary>
+                    <local:Settings x:Key="SettingsWithBrush" />
+                </ResourceDictionary>
                 </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

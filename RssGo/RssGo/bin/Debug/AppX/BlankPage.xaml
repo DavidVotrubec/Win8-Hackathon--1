@@ -3,12 +3,14 @@
     xmlns:common="using:RssGo.Common"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:WindowsBlogReader"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:RssGo="using:RssGo" mc:Ignorable="d" Foreground="{Binding Source={StaticResource SettingsWithBrush}, Path=Foreground}">
+	<common:LayoutAwarePage.Resources>
+        <RssGo:Settings x:Key="SettingsWithBrush"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#993B23D6"/>
+	</common:LayoutAwarePage.Resources>
 
-    <Grid>
+    <Grid Background="{Binding Source={StaticResource SettingsWithBrush}, Path=Background}">
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup>
 				<VisualState x:Name="FullScreenLandscape" />
@@ -26,13 +28,6 @@
 							<DiscreteObjectKeyFrame KeyTime="0">
 								<DiscreteObjectKeyFrame.Value>
 									<Visibility>Collapsed</Visibility>
-								</DiscreteObjectKeyFrame.Value>
-							</DiscreteObjectKeyFrame>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="textBlock">
-							<DiscreteObjectKeyFrame KeyTime="0">
-								<DiscreteObjectKeyFrame.Value>
-									<Thickness>25,0,0,0</Thickness>
 								</DiscreteObjectKeyFrame.Value>
 							</DiscreteObjectKeyFrame>
 						</ObjectAnimationUsingKeyFrames>
@@ -61,7 +56,7 @@
 
       
 
-		<Grid x:Name="FullGrid" Background="{StaticResource ApplicationPageBackgroundBrush}">
+		<Grid x:Name="FullGrid">
 			<Grid.RowDefinitions>
 				<RowDefinition Height="140" />
 				<RowDefinition Height="*" />
@@ -141,14 +136,7 @@
 					</DataTemplate>
 				</ListView.ItemTemplate>
 			</ListView>
-			<Grid DataContext="{Binding SelectedItem, ElementName=ItemListView}" Grid.Row="1">
-				<Grid.RowDefinitions>
-					<RowDefinition Height="Auto" />
-					<RowDefinition Height="*" />
-				</Grid.RowDefinitions>
-				<TextBlock x:Name="PostTitleText1" Text="{Binding Title}" FontSize="24"/>
-				<WebView x:Name="ContentView1" Grid.Row="1" Margin="0,5,20,20"/>
-			</Grid>
+			<WebView x:Name="ContentView1" Grid.Row="1"/>
 		</Grid>
 		<Grid x:Name="PortaitGrid" Visibility="Collapsed">
 					<Grid.RowDefinitions>

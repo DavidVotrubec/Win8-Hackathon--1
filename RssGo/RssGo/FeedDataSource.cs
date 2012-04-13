@@ -22,12 +22,12 @@ namespace RssGo
             }
         }
 
-        public void GetFeedAsync()
+        public void GetFeedAsync(int companyId, string anid)
         {
             var gatewayInstance = RssGoGateway.Instance;
             gatewayInstance.GetFeedUpdates += feedLoaded;
 
-            gatewayInstance.BeginGetFeedUpdates();
+            gatewayInstance.BeginGetFeedUpdates(companyId, anid);
         }
 
         private void feedLoaded(List<RssFeedItem> feeds)
