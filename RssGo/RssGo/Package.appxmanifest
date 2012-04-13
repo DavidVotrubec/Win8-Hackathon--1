@@ -18,7 +18,7 @@
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="RssGo.App">
       <VisualElements DisplayName="RssGo" Logo="logo-blesk.png" SmallLogo="small-logo-blesk.png" Description="RssGo" ForegroundText="light" BackgroundColor="#222222">
         <DefaultTile ShowName="allLogos" WideLogo="wide-logo-blesk.png" />
-        <SplashScreen Image="Assets\SplashScreen.png" />
+        <SplashScreen Image="splashscreen-blesk.jpg" />
       </VisualElements>
     </Application>
   </Applications>
