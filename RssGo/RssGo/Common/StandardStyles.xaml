@@ -625,7 +625,6 @@
                         </VisualStateManager.VisualStateGroups>
                         <Grid Margin="-1,-16,0,0">
                             <TextBlock x:Name="BackgroundGlyph" Text="" Foreground="{StaticResource BackButtonBackgroundBrush}"/>
-                            <TextBlock x:Name="NormalGlyph" Text="{StaticResource BackButtonGlyph}" Foreground="{StaticResource BackButtonGlyphBrush}"/>
                             <TextBlock x:Name="ArrowGlyph" Text="" Foreground="{StaticResource BackButtonPressedGlyphBrush}" Opacity="0"/>
                         </Grid>
                         <Rectangle
@@ -740,7 +739,6 @@
                         </VisualStateManager.VisualStateGroups>
                         <Grid Margin="-1,-1,0,0">
                             <TextBlock x:Name="BackgroundGlyph" Text="" Foreground="{StaticResource BackButtonBackgroundBrush}"/>
-                            <TextBlock x:Name="NormalGlyph" Text="{StaticResource BackButtonSnappedGlyph}" Foreground="{StaticResource BackButtonGlyphBrush}"/>
                             <TextBlock x:Name="ArrowGlyph" Text="" Foreground="{StaticResource BackButtonPressedGlyphBrush}" Opacity="0"/>
                         </Grid>
                         <Rectangle
@@ -1110,7 +1108,7 @@
 									<Rectangle x:Name="FocusVisual" IsHitTestVisible="False" Opacity="0" Stroke="{StaticResource ListViewItemKeyboardFocusBrush}" StrokeThickness="2"/>
 									<Rectangle x:Name="SelectionBackground" Fill="{Binding Source={StaticResource SettingsWithBrush}, Path=AccentBrush}" Margin="4" Opacity="0"/>
 									<Border x:Name="ContentBorder" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Margin="4">
-										<Grid>
+										<Grid Margin="0">
 											<ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" ContentTransitions="{TemplateBinding ContentTransitions}" Content="{TemplateBinding Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
 											<TextBlock x:Name="PlaceholderTextBlock" Foreground="{x:Null}" IsHitTestVisible="False" Margin="{TemplateBinding Padding}" Opacity="0" Text="Xg"/>
 											<Rectangle x:Name="PlaceholderRect" Fill="{StaticResource ListViewItemPlaceholderRectBrush}" IsHitTestVisible="False" Visibility="Collapsed"/>

@@ -36,9 +36,9 @@ namespace RssGo
             if (feedItem != null)
             {
                 // Navigate the WebView to the blog post content HTML string.
-                ContentView.NavigateToString(feedItem.Content);
-                ContentView1.NavigateToString(feedItem.Content);
-                ContentView2.NavigateToString(feedItem.Content);
+                ContentView.Navigate(new Uri(feedItem.Link, UriKind.Absolute));
+                ContentView1.Navigate(new Uri(feedItem.Link, UriKind.Absolute));
+                ContentView2.Navigate(new Uri(feedItem.Link, UriKind.Absolute));
             }
         }
 

@@ -56,7 +56,7 @@ namespace RssGo
             Window.Current.Content = rootFrame;
             Window.Current.Activate();
 
-            feedDataSource.GetFeedAsync(1, new Random().Next().ToString());
+            feedDataSource.GetFeedAsync(((Settings)this.Resources["SettingsWithBrush"]).FeedNumber, new Random().Next().ToString());
         }
 
         /// <summary>
