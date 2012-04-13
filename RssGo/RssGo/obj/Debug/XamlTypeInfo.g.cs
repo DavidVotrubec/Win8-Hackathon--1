@@ -115,42 +115,29 @@ namespace RssGo.XamlTypeInfo
 
         private object Activate_0_FeedDataSource() { return new RssGo.FeedDataSource(); }
 
-        private object Activate_1_ObservableCollection() { return new System.Collections.ObjectModel.ObservableCollection<RssGo.FeedData>(); }
+        private object Activate_1_ObservableCollection() { return new System.Collections.ObjectModel.ObservableCollection<RssGoLibrary.RssFeedItem>(); }
 
-        private object Activate_2_Collection() { return new System.Collections.ObjectModel.Collection<RssGo.FeedData>(); }
+        private object Activate_2_Collection() { return new System.Collections.ObjectModel.Collection<RssGoLibrary.RssFeedItem>(); }
 
-        private object Activate_3_FeedData() { return new RssGo.FeedData(); }
+        private object Activate_7_DateConverter() { return new RssGo.DateConverter(); }
 
-        private object Activate_6_List() { return new System.Collections.Generic.List<RssGo.FeedItem>(); }
+        private object Activate_8_LayoutAwarePage() { return new RssGo.Common.LayoutAwarePage(); }
 
-        private object Activate_7_FeedItem() { return new RssGo.FeedItem(); }
+        private object Activate_9_BlankPage() { return new RssGo.BlankPage(); }
 
-        private object Activate_9_DateConverter() { return new RssGo.DateConverter(); }
-
-        private object Activate_10_LayoutAwarePage() { return new RssGo.Common.LayoutAwarePage(); }
-
-        private object Activate_11_BlankPage() { return new RssGo.BlankPage(); }
-
-        private object Activate_12_ItemsPage1() { return new RssGo.ItemsPage1(); }
+        private object Activate_10_ItemsPage1() { return new RssGo.ItemsPage1(); }
 
         private void VectorAdd_1_ObservableCollection(object instance, object item)
         {
-            var collection = (System.Collections.ObjectModel.ObservableCollection<RssGo.FeedData>)instance;
-            var newItem = (RssGo.FeedData)item;
+            var collection = (System.Collections.ObjectModel.ObservableCollection<RssGoLibrary.RssFeedItem>)instance;
+            var newItem = (RssGoLibrary.RssFeedItem)item;
             collection.Add(newItem);
         }
 
         private void VectorAdd_2_Collection(object instance, object item)
         {
-            var collection = (System.Collections.ObjectModel.Collection<RssGo.FeedData>)instance;
-            var newItem = (RssGo.FeedData)item;
-            collection.Add(newItem);
-        }
-
-        private void VectorAdd_6_List(object instance, object item)
-        {
-            var collection = (System.Collections.Generic.List<RssGo.FeedItem>)instance;
-            var newItem = (RssGo.FeedItem)item;
+            var collection = (System.Collections.ObjectModel.Collection<RssGoLibrary.RssFeedItem>)instance;
+            var newItem = (RssGoLibrary.RssFeedItem)item;
             collection.Add(newItem);
         }
 
@@ -213,39 +200,32 @@ namespace RssGo.XamlTypeInfo
                 userType = new XamlUserType(this, typeName, typeof(RssGo.FeedDataSource), GetXamlTypeByName("Object"));
                 userType.Activator = Activate_0_FeedDataSource;
                 userType.AddMemberName("Feeds", "RssGo.FeedDataSource.Feeds");
-                AddToMapOfTypeToStandardName(typeof(System.Collections.ObjectModel.ObservableCollection<RssGo.FeedData>),
-                                             "System.Collections.ObjectModel.ObservableCollection<RssGo.FeedData>");
+                AddToMapOfTypeToStandardName(typeof(System.Collections.ObjectModel.ObservableCollection<RssGoLibrary.RssFeedItem>),
+                                             "System.Collections.ObjectModel.ObservableCollection<RssGoLibrary.RssFeedItem>");
                 xamlType = userType;
                 break;
 
-            case "System.Collections.ObjectModel.ObservableCollection<RssGo.FeedData>":
-                userType = new XamlUserType(this, typeName, typeof(System.Collections.ObjectModel.ObservableCollection<RssGo.FeedData>), GetXamlTypeByName("System.Collections.ObjectModel.Collection<RssGo.FeedData>"));
+            case "System.Collections.ObjectModel.ObservableCollection<RssGoLibrary.RssFeedItem>":
+                userType = new XamlUserType(this, typeName, typeof(System.Collections.ObjectModel.ObservableCollection<RssGoLibrary.RssFeedItem>), GetXamlTypeByName("System.Collections.ObjectModel.Collection<RssGoLibrary.RssFeedItem>"));
                 userType.Activator = Activate_1_ObservableCollection;
                 userType.CollectionAdd = VectorAdd_1_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case "System.Collections.ObjectModel.Collection<RssGo.FeedData>":
-                userType = new XamlUserType(this, typeName, typeof(System.Collections.ObjectModel.Collection<RssGo.FeedData>), GetXamlTypeByName("Object"));
+            case "System.Collections.ObjectModel.Collection<RssGoLibrary.RssFeedItem>":
+                userType = new XamlUserType(this, typeName, typeof(System.Collections.ObjectModel.Collection<RssGoLibrary.RssFeedItem>), GetXamlTypeByName("Object"));
                 userType.Activator = Activate_2_Collection;
                 userType.CollectionAdd = VectorAdd_2_Collection;
                 xamlType = userType;
                 break;
 
-            case "RssGo.FeedData":
-                userType = new XamlUserType(this, typeName, typeof(RssGo.FeedData), GetXamlTypeByName("Object"));
-                userType.Activator = Activate_3_FeedData;
-                userType.AddMemberName("Title", "RssGo.FeedData.Title");
-                userType.AddMemberName("Description", "RssGo.FeedData.Description");
-                userType.AddMemberName("PubDate", "RssGo.FeedData.PubDate");
-                userType.AddMemberName("Items", "RssGo.FeedData.Items");
-                AddToMapOfTypeToStandardName(typeof(System.Collections.Generic.List<RssGo.FeedItem>),
-                                             "System.Collections.Generic.List<RssGo.FeedItem>");
-                xamlType = userType;
-                break;
-
-            case "System.DateTime":
-                userType = new XamlUserType(this, typeName, typeof(System.DateTime), GetXamlTypeByName("System.ValueType"));
+            case "RssGoLibrary.RssFeedItem":
+                userType = new XamlUserType(this, typeName, typeof(RssGoLibrary.RssFeedItem), GetXamlTypeByName("System.ValueType"));
+                userType.AddMemberName("Title", "RssGoLibrary.RssFeedItem.Title");
+                userType.AddMemberName("Author", "RssGoLibrary.RssFeedItem.Author");
+                userType.AddMemberName("Content", "RssGoLibrary.RssFeedItem.Content");
+                userType.AddMemberName("PubDate", "RssGoLibrary.RssFeedItem.PubDate");
+                userType.AddMemberName("Link", "RssGoLibrary.RssFeedItem.Link");
                 xamlType = userType;
                 break;
 
@@ -254,21 +234,8 @@ namespace RssGo.XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case "System.Collections.Generic.List<RssGo.FeedItem>":
-                userType = new XamlUserType(this, typeName, typeof(System.Collections.Generic.List<RssGo.FeedItem>), GetXamlTypeByName("Object"));
-                userType.Activator = Activate_6_List;
-                userType.CollectionAdd = VectorAdd_6_List;
-                xamlType = userType;
-                break;
-
-            case "RssGo.FeedItem":
-                userType = new XamlUserType(this, typeName, typeof(RssGo.FeedItem), GetXamlTypeByName("Object"));
-                userType.Activator = Activate_7_FeedItem;
-                userType.AddMemberName("Title", "RssGo.FeedItem.Title");
-                userType.AddMemberName("Author", "RssGo.FeedItem.Author");
-                userType.AddMemberName("Content", "RssGo.FeedItem.Content");
-                userType.AddMemberName("PubDate", "RssGo.FeedItem.PubDate");
-                userType.AddMemberName("Link", "RssGo.FeedItem.Link");
+            case "System.DateTime":
+                userType = new XamlUserType(this, typeName, typeof(System.DateTime), GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
@@ -279,26 +246,26 @@ namespace RssGo.XamlTypeInfo
 
             case "RssGo.DateConverter":
                 userType = new XamlUserType(this, typeName, typeof(RssGo.DateConverter), GetXamlTypeByName("Object"));
-                userType.Activator = Activate_9_DateConverter;
+                userType.Activator = Activate_7_DateConverter;
                 xamlType = userType;
                 break;
 
             case "RssGo.Common.LayoutAwarePage":
                 userType = new XamlUserType(this, typeName, typeof(RssGo.Common.LayoutAwarePage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_LayoutAwarePage;
+                userType.Activator = Activate_8_LayoutAwarePage;
                 userType.AddMemberName("UseFilledStateForNarrowWindow", "RssGo.Common.LayoutAwarePage.UseFilledStateForNarrowWindow");
                 xamlType = userType;
                 break;
 
             case "RssGo.BlankPage":
                 userType = new XamlUserType(this, typeName, typeof(RssGo.BlankPage), GetXamlTypeByName("RssGo.Common.LayoutAwarePage"));
-                userType.Activator = Activate_11_BlankPage;
+                userType.Activator = Activate_9_BlankPage;
                 xamlType = userType;
                 break;
 
             case "RssGo.ItemsPage1":
                 userType = new XamlUserType(this, typeName, typeof(RssGo.ItemsPage1), GetXamlTypeByName("RssGo.Common.LayoutAwarePage"));
-                userType.Activator = Activate_12_ItemsPage1;
+                userType.Activator = Activate_10_ItemsPage1;
                 xamlType = userType;
                 break;
 
@@ -312,97 +279,62 @@ namespace RssGo.XamlTypeInfo
             var that = (RssGo.FeedDataSource)instance;
             return that.Feeds;
         }
-        private object get_1_FeedData_Title(object instance)
+        private object get_1_RssFeedItem_Title(object instance)
         {
-            var that = (RssGo.FeedData)instance;
+            var that = (RssGoLibrary.RssFeedItem)instance;
             return that.Title;
         }
-        private void set_1_FeedData_Title(object instance, object Value)
+        private void set_1_RssFeedItem_Title(object instance, object Value)
         {
-            var that = (RssGo.FeedData)instance;
+            var that = (RssGoLibrary.RssFeedItem)instance;
             that.Title = (System.String)Value;
         }
-        private object get_2_FeedData_Description(object instance)
+        private object get_2_RssFeedItem_Author(object instance)
         {
-            var that = (RssGo.FeedData)instance;
-            return that.Description;
-        }
-        private void set_2_FeedData_Description(object instance, object Value)
-        {
-            var that = (RssGo.FeedData)instance;
-            that.Description = (System.String)Value;
-        }
-        private object get_3_FeedData_PubDate(object instance)
-        {
-            var that = (RssGo.FeedData)instance;
-            return that.PubDate;
-        }
-        private void set_3_FeedData_PubDate(object instance, object Value)
-        {
-            var that = (RssGo.FeedData)instance;
-            that.PubDate = (System.DateTime)Value;
-        }
-        private object get_4_FeedData_Items(object instance)
-        {
-            var that = (RssGo.FeedData)instance;
-            return that.Items;
-        }
-        private object get_5_FeedItem_Title(object instance)
-        {
-            var that = (RssGo.FeedItem)instance;
-            return that.Title;
-        }
-        private void set_5_FeedItem_Title(object instance, object Value)
-        {
-            var that = (RssGo.FeedItem)instance;
-            that.Title = (System.String)Value;
-        }
-        private object get_6_FeedItem_Author(object instance)
-        {
-            var that = (RssGo.FeedItem)instance;
+            var that = (RssGoLibrary.RssFeedItem)instance;
             return that.Author;
         }
-        private void set_6_FeedItem_Author(object instance, object Value)
+        private void set_2_RssFeedItem_Author(object instance, object Value)
         {
-            var that = (RssGo.FeedItem)instance;
+            var that = (RssGoLibrary.RssFeedItem)instance;
             that.Author = (System.String)Value;
         }
-        private object get_7_FeedItem_Content(object instance)
+        private object get_3_RssFeedItem_Content(object instance)
         {
-            var that = (RssGo.FeedItem)instance;
+            var that = (RssGoLibrary.RssFeedItem)instance;
             return that.Content;
         }
-        private void set_7_FeedItem_Content(object instance, object Value)
+        private void set_3_RssFeedItem_Content(object instance, object Value)
         {
-            var that = (RssGo.FeedItem)instance;
+            var that = (RssGoLibrary.RssFeedItem)instance;
             that.Content = (System.String)Value;
         }
-        private object get_8_FeedItem_PubDate(object instance)
+        private object get_4_RssFeedItem_PubDate(object instance)
         {
-            var that = (RssGo.FeedItem)instance;
+            var that = (RssGoLibrary.RssFeedItem)instance;
             return that.PubDate;
         }
-        private void set_8_FeedItem_PubDate(object instance, object Value)
+        private void set_4_RssFeedItem_PubDate(object instance, object Value)
         {
-            var that = (RssGo.FeedItem)instance;
+            var that = (RssGoLibrary.RssFeedItem)instance;
             that.PubDate = (System.DateTime)Value;
         }
-        private object get_9_FeedItem_Link(object instance)
+        private object get_5_RssFeedItem_Link(object instance)
         {
-            var that = (RssGo.FeedItem)instance;
+            var that = (RssGoLibrary.RssFeedItem)instance;
             return that.Link;
         }
-        private void set_9_FeedItem_Link(object instance, object Value)
+        private void set_5_RssFeedItem_Link(object instance, object Value)
         {
-            var that = (RssGo.FeedItem)instance;
+            var that = (RssGoLibrary.RssFeedItem)instance;
             that.Link = (System.Uri)Value;
         }
-        private object get_10_LayoutAwarePage_UseFilledStateForNarrowWindow(object instance)
+        private object get_6_LayoutAwarePage_UseFilledStateForNarrowWindow(object instance)
         {
             var that = (RssGo.Common.LayoutAwarePage)instance;
             return that.UseFilledStateForNarrowWindow;
         }
-        private void set_10_LayoutAwarePage_UseFilledStateForNarrowWindow(object instance, object Value)
+        private void set_6_LayoutAwarePage_UseFilledStateForNarrowWindow(object instance, object Value)
         {
             var that = (RssGo.Common.LayoutAwarePage)instance;
             that.UseFilledStateForNarrowWindow = (System.Boolean)Value;
@@ -417,69 +349,45 @@ namespace RssGo.XamlTypeInfo
             {
             case "RssGo.FeedDataSource.Feeds":
                 userType = (XamlUserType)GetXamlTypeByName("RssGo.FeedDataSource");
-                xamlMember = new XamlMember(this, "Feeds", "System.Collections.ObjectModel.ObservableCollection<RssGo.FeedData>");
+                xamlMember = new XamlMember(this, "Feeds", "System.Collections.ObjectModel.ObservableCollection<RssGoLibrary.RssFeedItem>");
                 xamlMember.Getter = get_0_FeedDataSource_Feeds;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "RssGo.FeedData.Title":
-                userType = (XamlUserType)GetXamlTypeByName("RssGo.FeedData");
+            case "RssGoLibrary.RssFeedItem.Title":
+                userType = (XamlUserType)GetXamlTypeByName("RssGoLibrary.RssFeedItem");
                 xamlMember = new XamlMember(this, "Title", "String");
-                xamlMember.Getter = get_1_FeedData_Title;
-                xamlMember.Setter = set_1_FeedData_Title;
+                xamlMember.Getter = get_1_RssFeedItem_Title;
+                xamlMember.Setter = set_1_RssFeedItem_Title;
                 break;
-            case "RssGo.FeedData.Description":
-                userType = (XamlUserType)GetXamlTypeByName("RssGo.FeedData");
-                xamlMember = new XamlMember(this, "Description", "String");
-                xamlMember.Getter = get_2_FeedData_Description;
-                xamlMember.Setter = set_2_FeedData_Description;
-                break;
-            case "RssGo.FeedData.PubDate":
-                userType = (XamlUserType)GetXamlTypeByName("RssGo.FeedData");
-                xamlMember = new XamlMember(this, "PubDate", "System.DateTime");
-                xamlMember.Getter = get_3_FeedData_PubDate;
-                xamlMember.Setter = set_3_FeedData_PubDate;
-                break;
-            case "RssGo.FeedData.Items":
-                userType = (XamlUserType)GetXamlTypeByName("RssGo.FeedData");
-                xamlMember = new XamlMember(this, "Items", "System.Collections.Generic.List<RssGo.FeedItem>");
-                xamlMember.Getter = get_4_FeedData_Items;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "RssGo.FeedItem.Title":
-                userType = (XamlUserType)GetXamlTypeByName("RssGo.FeedItem");
-                xamlMember = new XamlMember(this, "Title", "String");
-                xamlMember.Getter = get_5_FeedItem_Title;
-                xamlMember.Setter = set_5_FeedItem_Title;
-                break;
-            case "RssGo.FeedItem.Author":
-                userType = (XamlUserType)GetXamlTypeByName("RssGo.FeedItem");
+            case "RssGoLibrary.RssFeedItem.Author":
+                userType = (XamlUserType)GetXamlTypeByName("RssGoLibrary.RssFeedItem");
                 xamlMember = new XamlMember(this, "Author", "String");
-                xamlMember.Getter = get_6_FeedItem_Author;
-                xamlMember.Setter = set_6_FeedItem_Author;
+                xamlMember.Getter = get_2_RssFeedItem_Author;
+                xamlMember.Setter = set_2_RssFeedItem_Author;
                 break;
-            case "RssGo.FeedItem.Content":
-                userType = (XamlUserType)GetXamlTypeByName("RssGo.FeedItem");
+            case "RssGoLibrary.RssFeedItem.Content":
+                userType = (XamlUserType)GetXamlTypeByName("RssGoLibrary.RssFeedItem");
                 xamlMember = new XamlMember(this, "Content", "String");
-                xamlMember.Getter = get_7_FeedItem_Content;
-                xamlMember.Setter = set_7_FeedItem_Content;
+                xamlMember.Getter = get_3_RssFeedItem_Content;
+                xamlMember.Setter = set_3_RssFeedItem_Content;
                 break;
-            case "RssGo.FeedItem.PubDate":
-                userType = (XamlUserType)GetXamlTypeByName("RssGo.FeedItem");
+            case "RssGoLibrary.RssFeedItem.PubDate":
+                userType = (XamlUserType)GetXamlTypeByName("RssGoLibrary.RssFeedItem");
                 xamlMember = new XamlMember(this, "PubDate", "System.DateTime");
-                xamlMember.Getter = get_8_FeedItem_PubDate;
-                xamlMember.Setter = set_8_FeedItem_PubDate;
+                xamlMember.Getter = get_4_RssFeedItem_PubDate;
+                xamlMember.Setter = set_4_RssFeedItem_PubDate;
                 break;
-            case "RssGo.FeedItem.Link":
-                userType = (XamlUserType)GetXamlTypeByName("RssGo.FeedItem");
+            case "RssGoLibrary.RssFeedItem.Link":
+                userType = (XamlUserType)GetXamlTypeByName("RssGoLibrary.RssFeedItem");
                 xamlMember = new XamlMember(this, "Link", "System.Uri");
-                xamlMember.Getter = get_9_FeedItem_Link;
-                xamlMember.Setter = set_9_FeedItem_Link;
+                xamlMember.Getter = get_5_RssFeedItem_Link;
+                xamlMember.Setter = set_5_RssFeedItem_Link;
                 break;
             case "RssGo.Common.LayoutAwarePage.UseFilledStateForNarrowWindow":
                 userType = (XamlUserType)GetXamlTypeByName("RssGo.Common.LayoutAwarePage");
                 xamlMember = new XamlMember(this, "UseFilledStateForNarrowWindow", "Boolean");
-                xamlMember.Getter = get_10_LayoutAwarePage_UseFilledStateForNarrowWindow;
-                xamlMember.Setter = set_10_LayoutAwarePage_UseFilledStateForNarrowWindow;
+                xamlMember.Getter = get_6_LayoutAwarePage_UseFilledStateForNarrowWindow;
+                xamlMember.Setter = set_6_LayoutAwarePage_UseFilledStateForNarrowWindow;
                 break;
             }
             return xamlMember;

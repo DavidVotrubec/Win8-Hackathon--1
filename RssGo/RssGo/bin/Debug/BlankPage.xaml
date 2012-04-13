@@ -59,6 +59,8 @@
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
 
+      
+
 		<Grid x:Name="FullGrid" Background="{StaticResource ApplicationPageBackgroundBrush}">
 			<Grid.RowDefinitions>
 				<RowDefinition Height="140" />
@@ -81,10 +83,13 @@
 
 				<!-- The default value of Grid.Column is 0, so we do not need to set it   
                  to make the ListView show up in the first column. -->
-				<ListView x:ConnectionId='3' x:Name="ItemListView"  
-					ItemsSource="{Binding Items}"
+				<ListView x:Name="ItemListView"  
+					ItemsSource="{Binding Feeds}"
 					Margin="60,0,0,10"
-					                                                >
+					>
+
+                    <!-- SelectionChanged="ItemListView_SelectionChanged"-->
+                    
 					<ListView.ItemTemplate>
 						<DataTemplate>
 							<StackPanel>
@@ -117,9 +122,12 @@
 			</Grid.RowDefinitions>
 <!-- The default value of Grid.Column is 0, so we do not need to set it   
                  to make the ListView show up in the first column. -->
-			<ListView x:ConnectionId='2' x:Name="ItemListView1"  
+			<ListView x:Name="ItemListView1"  
 				ItemsSource="{Binding Items}"
-				                                                >
+				>
+
+                <!--  SelectionChanged="ItemListView_SelectionChanged" -->
+                
 				<ListView.ItemTemplate>
 					<DataTemplate>
 						<StackPanel>
@@ -164,11 +172,13 @@
 
 				<!-- The default value of Grid.Column is 0, so we do not need to set it   
                  to make the ListView show up in the first column. -->
-				<ListView x:ConnectionId='1'  
+				<ListView  
 					ItemsSource="{Binding Items}"
-					Margin="25,0,0,10"
-					                                                
+					Margin="25,0,0,10"					
                     HorizontalContentAlignment="Stretch">
+
+                    <!-- SelectionChanged="ItemListView_SelectionChanged" -->
+                    
 					<ListView.ItemTemplate>
 						<DataTemplate>
                             <StackPanel>
