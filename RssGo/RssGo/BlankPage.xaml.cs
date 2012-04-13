@@ -22,18 +22,9 @@ namespace RssGo
             InitializeComponent();
         }
 
-<<<<<<< HEAD
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
             DataContext = App.FeedDataSource;
-=======
-
-
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            DataContext = App.FeedDataSource;
-            //Fill="{Binding Source={StaticResource SettingsWithBrush}, Path=Brush}"
->>>>>>> 695dc330abdf3a743d393c4d5cd2001ca97dfa13
         }
 
         private void ItemListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
