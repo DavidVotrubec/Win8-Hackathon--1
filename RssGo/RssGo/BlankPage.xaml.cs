@@ -19,7 +19,7 @@ namespace RssGo
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class BlankPage : Page
+    public sealed partial class BlankPage : RssGo.Common.LayoutAwarePage
     {
         public BlankPage()
         {
@@ -50,6 +50,7 @@ namespace RssGo
             {
                 // Navigate the WebView to the blog post content HTML string.
                 ContentView.NavigateToString(feedItem.Content);
+                ContentView1.NavigateToString(feedItem.Content);
             }
         }
     }

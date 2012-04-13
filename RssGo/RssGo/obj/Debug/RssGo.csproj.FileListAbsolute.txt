@@ -27,3 +27,6 @@ d:\work\win8\RssGo\RssGo\obj\Debug\resources.resfiles
 d:\work\win8\RssGo\RssGo\obj\Debug\pri.resfiles
 d:\work\win8\RssGo\RssGo\obj\Debug\LanguageQualifiers.txt
 d:\work\win8\RssGo\RssGo\obj\Debug\ProjectArchitectures.txt
+d:\work\win8\RssGo\RssGo\obj\Debug\ItemsPage1.g.i.cs
+d:\work\win8\RssGo\RssGo\obj\Debug\ItemsPage1.g.cs
+d:\work\win8\RssGo\RssGo\obj\Debug\ItemsPage1.xaml

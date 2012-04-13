@@ -127,7 +127,11 @@ namespace RssGo.XamlTypeInfo
 
         private object Activate_9_DateConverter() { return new RssGo.DateConverter(); }
 
-        private object Activate_10_BlankPage() { return new RssGo.BlankPage(); }
+        private object Activate_10_LayoutAwarePage() { return new RssGo.Common.LayoutAwarePage(); }
+
+        private object Activate_11_BlankPage() { return new RssGo.BlankPage(); }
+
+        private object Activate_12_ItemsPage1() { return new RssGo.ItemsPage1(); }
 
         private void VectorAdd_1_ObservableCollection(object instance, object item)
         {
@@ -198,6 +202,11 @@ namespace RssGo.XamlTypeInfo
 
             case "Windows.UI.Xaml.Controls.UserControl":
                 xamlType = new XamlSystemBaseType(typeName, typeof(Windows.UI.Xaml.Controls.UserControl));
+                break;
+
+            case "System.Boolean":
+            case "Boolean":
+                xamlType = new XamlSystemBaseType(typeName, typeof(System.Boolean));
                 break;
 
             case "RssGo.FeedDataSource":
@@ -274,9 +283,22 @@ namespace RssGo.XamlTypeInfo
                 xamlType = userType;
                 break;
 
+            case "RssGo.Common.LayoutAwarePage":
+                userType = new XamlUserType(this, typeName, typeof(RssGo.Common.LayoutAwarePage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_10_LayoutAwarePage;
+                userType.AddMemberName("UseFilledStateForNarrowWindow", "RssGo.Common.LayoutAwarePage.UseFilledStateForNarrowWindow");
+                xamlType = userType;
+                break;
+
             case "RssGo.BlankPage":
-                userType = new XamlUserType(this, typeName, typeof(RssGo.BlankPage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_BlankPage;
+                userType = new XamlUserType(this, typeName, typeof(RssGo.BlankPage), GetXamlTypeByName("RssGo.Common.LayoutAwarePage"));
+                userType.Activator = Activate_11_BlankPage;
+                xamlType = userType;
+                break;
+
+            case "RssGo.ItemsPage1":
+                userType = new XamlUserType(this, typeName, typeof(RssGo.ItemsPage1), GetXamlTypeByName("RssGo.Common.LayoutAwarePage"));
+                userType.Activator = Activate_12_ItemsPage1;
                 xamlType = userType;
                 break;
 
@@ -375,6 +397,16 @@ namespace RssGo.XamlTypeInfo
             var that = (RssGo.FeedItem)instance;
             that.Link = (System.Uri)Value;
         }
+        private object get_10_LayoutAwarePage_UseFilledStateForNarrowWindow(object instance)
+        {
+            var that = (RssGo.Common.LayoutAwarePage)instance;
+            return that.UseFilledStateForNarrowWindow;
+        }
+        private void set_10_LayoutAwarePage_UseFilledStateForNarrowWindow(object instance, object Value)
+        {
+            var that = (RssGo.Common.LayoutAwarePage)instance;
+            that.UseFilledStateForNarrowWindow = (System.Boolean)Value;
+        }
 
         private IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -442,6 +474,12 @@ namespace RssGo.XamlTypeInfo
                 xamlMember = new XamlMember(this, "Link", "System.Uri");
                 xamlMember.Getter = get_9_FeedItem_Link;
                 xamlMember.Setter = set_9_FeedItem_Link;
+                break;
+            case "RssGo.Common.LayoutAwarePage.UseFilledStateForNarrowWindow":
+                userType = (XamlUserType)GetXamlTypeByName("RssGo.Common.LayoutAwarePage");
+                xamlMember = new XamlMember(this, "UseFilledStateForNarrowWindow", "Boolean");
+                xamlMember.Getter = get_10_LayoutAwarePage_UseFilledStateForNarrowWindow;
+                xamlMember.Setter = set_10_LayoutAwarePage_UseFilledStateForNarrowWindow;
                 break;
             }
             return xamlMember;

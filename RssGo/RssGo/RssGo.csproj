@@ -123,6 +123,9 @@
     </Compile>
     <Compile Include="DateConverter.cs" />
     <Compile Include="FeedData.cs" />
+    <Compile Include="ItemsPage1.xaml.cs">
+      <DependentUpon>ItemsPage1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +161,10 @@
     <Page Include="BlankPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ItemsPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' ">
