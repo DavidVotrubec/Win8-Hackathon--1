@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="542a7a68-d5a0-4374-94aa-f1b81a922442" Publisher="CN=Jiri" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <Properties>
+    <DisplayName>RssGo</DisplayName>
+    <PublisherDisplayName>Jiri</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+    <Description>RssGo</Description>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="en-US" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="RssGo.exe" EntryPoint="RssGo.App">
+      <VisualElements DisplayName="RssGo" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="RssGo" ForegroundText="light" BackgroundColor="#222222">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
